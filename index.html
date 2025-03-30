@@ -1,0 +1,98 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callejero</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label> 
+    <div class="header__logo-container">
+        <img src="imagenes/callejero.png" alt="logo callejero" class="header__logo">
+    </div>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#menu">Menu</a></li>
+            <li class="header__nav-item"><a href="#ubicacion">Ubicacion</a></li>
+            <li class="header__nav-item"><a href="#">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="main">
+        <video autoplay muted loop class="main__video" src="imagenes/video__callejero.mp4" type="video/mp4">Tu navegador no soporta videos HTML5</video>
+
+        <div class="main__content">
+            <h1>Callejero</h1>
+            <p>Deliciosas hamburgesas y snacks en una atmósfera urbana y vibrante</p>
+            <a href="imagenes/menu.jpg" class="main__button" download="">Descargar Menú</a>
+        </div>
+    </main>
+
+    <h2 class="menu__title" id="menu">Conoce nuestro menú</h2>
+    <section class="menu">
+        <a href="imagenes/menu.jpg" class="menu__item" target="_blank">
+            <img src="imagenes/menu.jpg" alt="Burgers">
+            <div class="menu__overlay">Burgers</div>
+        </a>
+
+        <a href="imagenes/menu_2.jpg" class="menu__item" target="_blank">
+            <img src="imagenes/menu_2.jpg" alt="Best Sellers">
+            <div class="menu__overlay">Best Sellers</div>
+        </a>
+
+        <a href="imagenes/menu_3.jpg" class="menu__item" target="_blank">
+            <img src="imagenes/menu_3.jpg" alt="Guarniciones">
+            <div class="menu__overlay">Guarniciones</div>
+        </a>
+    </section>
+
+    <section class="ubicacion" id="ubicacion">
+        <div class="ubicacion__mapa">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4488.2869157938585!2d-88.28834242420345!3d18.494577369966652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba3bdf6f0bb43%3A0x543e57782ea0f955!2sCallejero%20Pz!5e1!3m2!1ses-419!2smx!4v1743298298691!5m2!1ses-419!2smx" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+        <div class="ubicacion__info">
+            <h2>Visitanos</h2>
+            <p>Callejero Pz
+            <br>Bulevar bahia, Othón P. Blanco Esquina,
+            <br>77077 Chetumal, Q.R.</p>
+            <p><strong>Horario:</strong><br>
+            Martes a Domingo: 4:00 - 11:00 pm</p>
+            <p><strong>Contacto:</strong>
+            <br>@callejeropz</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenido">
+        <h3>Callejero Pz</h3>
+        <p>Bulevar bahía, Othón P. Blanco Esquina<br>
+        Chetumal, Q.R. 77077</p>
+    
+        <p><strong>Horario:</strong> Martes a Domingo — 4:00 a 11:00 pm</p>
+        <p><strong>Contacto:</strong> @callejeropz</p>
+
+        <div class="footer__redes">
+        <a href="https://www.facebook.com/callejeropz" target="_blank">Facebook</a>
+        <a href="https://instagram.com/callejeropz" target="_blank">Instagram</a>
+        </div>
+        </div>
+    
+        <div class="footer__copy">
+        &copy; 2025 Callejero Pz. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
